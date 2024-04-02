@@ -215,11 +215,6 @@ header {
   overflow: hidden;
 }
 
-@media screen and (max-width: 768px) {
-  .models {
-    grid-template-columns: 1fr;
-  }
-}
 
 .model-card .car-name {
   position: absolute;
@@ -287,4 +282,90 @@ header {
 .model-card-buttons button:nth-child(2) {
   color: white;
   background-color: transparent;
+}
+
+.find-car {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.find-car-form {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  flex: 1;
+}
+
+.find-car-form .wrap {
+  width: 60%;
+}
+
+.find-car-image {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.find-car-form h1 {
+  font-size: 50px;
+  line-height: 1.1;
+}
+
+.find-car-form p {
+  font-size: 20px;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  margin-top: 10px;
+}
+
+.find-car-form .input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrap label {
+  font-size: 20px;
+}
+
+.find-car-form .wrap .input input {
+  height: 70px;
+  padding: 10px 40px;
+  font-size: 20px;
+  border-radius: 7px;
+
+  &::placeholder {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1768px) {
+  .find-car {
+    flex-direction: column;
+  }
+
+  .find-car-form {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wrap {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .find-car-image {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .models {
+    grid-template-columns: 1fr;
+  }
 }
