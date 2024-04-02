@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 header {
   padding: 15px;
   background: linear-gradient(to bottom,
@@ -139,6 +141,7 @@ header {
   gap: 40px;
   padding: 90px;
   flex-wrap: wrap;
+  margin-bottom: 70px;
 }
 
 .card {
@@ -187,4 +190,101 @@ header {
   &:hover {
     background-color: grey;
   }
+}
+
+// Models section
+.models-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.models {
+  display: grid;
+  grid-template-columns: repeat(2, 550px);
+  gap: 20px;
+}
+
+.model-card {
+  position: relative;
+  border: 1px solid #ddd;
+  width: 550px;
+  height: 725px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .models {
+    grid-template-columns: 1fr;
+  }
+}
+
+.model-card .car-name {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: white;
+  font-size: 40px;
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.model-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.model-card:hover img {
+  transform: scale(1.1);
+}
+
+.model-card-footer {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.model-card-footer span {
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.model-card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.model-card-buttons button:nth-child(1),
+.model-card-buttons button:nth-child(2) {
+  padding: 13px 26px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.model-card-buttons button:nth-child(2) {
+  color: white;
+  background-color: transparent;
 }
