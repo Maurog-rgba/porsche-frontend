@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Porsche Next';
+  src: url('../src/assets/fonts/PorscheNext-Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Porsche Next', sans-serif;
+}
+
+body {
+  font-size: 100%;
+  list-style-type: none;
+}
