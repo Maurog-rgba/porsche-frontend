@@ -17,14 +17,17 @@
     <h1>Permaneça com sua essência.</h1>
     <button>O novo Macan 100% elétrico</button>
   </div>
-  <video autoplay loop muted>
+  <video autoplay loop muted #Video>
     <source src="../../../assets/videos/hero-video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
   <div class="video-controls">
-    <button id="stop-video" type="button">
-      <!-- <span class="material-symbols-outlined"> play_arrow </span> -->
+    <button id="stop-video" type="button" (click)="stopVideoPlayer()">
+      @if (isStopped) {
+      <span class="material-symbols-outlined"> play_arrow </span>
+      }@else {
       <span class="material-symbols-outlined"> pause </span>
+      }
     </button>
   </div>
   <div class="hero-footer"></div>
@@ -208,7 +211,6 @@
     src="https://images-porsche.imgix.net/-/media/3ECDD9AEFB684670A26CF40722AB1083_58DB8FB17A0F49B69A7632BB5B59B227_Enhanced-Finder_4-3?w=1173&q=85&auto=format"
   />
 </section>
-
 
 <!-- TODO: Social media stories section -->
 
