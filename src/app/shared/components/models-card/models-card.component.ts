@@ -13,34 +13,35 @@ export class ModelsCardComponent {
       name: '718',
       description:
         'Dois lugares com alta dinâmica de condução graças ao seu motor central.',
-      image: 'https://placehold.co/600x400/000000/FFFFFF/png',
+      image: '../../../../assets/images/cars/718.avif',
     },
     {
       name: '911',
       description:
         'Icônico carro esportivo com motor montado na traseira e desempenho superior.',
-      image: 'https://placehold.co/600x400/000000/FFFFFF/png',
+      image: '../../../../assets/images/cars/911.avif',
     },
     {
       name: 'Taycan',
       description:
         'Sedan esportivo totalmente elétrico com porta-malas dianteiro e traseiro.',
+      image: '../../../../assets/images/cars/taycan.avif',
     },
     {
       name: 'Panamera',
       description: 'Sedan esportivo de luxo com quatro lugares.',
-      image: 'https://placehold.co/600x400/000000/FFFFFF/png',
+      image: '../../../../assets/images/cars/panamera.avif',
     },
     {
       name: 'Macan',
       description: 'SUV compacto com alta versatilidade.',
-      image: 'https://placehold.co/600x400/000000/FFFFFF/png',
+      image: '../../../../assets/images/cars/macan.avif',
     },
     {
       name: 'Cayenne',
       description:
         'SUV com até 5 assentos, mas antes de tudo, um carro esportivo.',
-      image: 'https://placehold.co/600x400/000000/FFFFFF/png',
+      image: '../../../../assets/images/cars/Cayenne.avif',
     },
   ];
 }

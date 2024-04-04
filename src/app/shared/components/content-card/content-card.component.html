@@ -1,33 +1,11 @@
 <section class="content">
+  @for (content of contents; track $index) {
   <div class="card">
-    <img
-      src="https://placehold.co/600x400/000000/FFFFFF/png"
-      alt="Imagem do card"
-    />
+    <img [src]="content.image" [alt]="content.text" />
     <div class="card-content">
-      <p>O novo Macan 100% elétrico</p>
+      <p>{{ content.text }}</p>
       <span class="material-symbols-outlined"> arrow_right_alt </span>
     </div>
   </div>
-  <div class="card">
-    <img
-      src="https://placehold.co/600x400/000000/FFFFFF/png"
-      alt="Imagem do card"
-    />
-    <div class="card-content">
-      <p>O novo Panamera</p>
-      <span class="material-symbols-outlined"> arrow_right_alt </span>
-    </div>
-  </div>
-  <div class="card">
-    <img
-      src="https://placehold.co/600x400/000000/FFFFFF/png"
-      alt="Imagem do card"
-    />
-    <div class="card-content">
-      <p>718 Spyder RS</p>
-      <!-- right arrow -->
-      <span class="material-symbols-outlined"> arrow_right_alt </span>
-    </div>
-  </div>
+  }
 </section>
