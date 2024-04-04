@@ -4,10 +4,18 @@
     <span class="menu-btn-text"> Menu </span>
   </div>
   <div class="logo">
+    @if (logo === 'desktop') {
     <img
-      src="../../../assets/images/svg/porshe-1.svg"
-      alt="Porshe Logo"
+      src="../../../../assets/images/svg/porshe-logo-desktop.svg"
+      alt="Porcshe Logo Desktop"
       class="letter-logo"
     />
+    } @else if (logo === 'mobile') {
+    <img
+      src="../../../../assets/images/icons/porsche-logo-mobile.webp"
+      alt="Porsche Logo Mobile"
+      class="mobile-logo"
+    />
+    }
   </div>
 </header>
