@@ -1,3 +1,10 @@
+.container h1 {
+  width: 100%;
+  padding: 68px;
+  font-size: 45px;
+  text-align: center;
+}
+
 .models-section {
   width: 100%;
   display: flex;
@@ -7,19 +14,18 @@
 
 .models {
   display: grid;
-  grid-template-columns: repeat(2, 550px);
+  grid-template-columns: repeat(2, auto);
   gap: 20px;
 }
 
 .model-card {
   position: relative;
   border: 1px solid #ddd;
-  width: 550px;
-  height: 725px;
+  max-width: 450px;
+  height: 645px;
   border-radius: 20px;
   overflow: hidden;
 }
-
 
 .model-card .car-name {
   position: absolute;
