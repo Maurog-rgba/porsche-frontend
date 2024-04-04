@@ -1,8 +1,9 @@
 .find-car {
   position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
+  display: grid;
+  justify-content: start;
+  align-items: start;
+  grid-template-columns: repeat(2, auto);
   margin-top: 80px;
 }
 
@@ -11,27 +12,28 @@
   flex-direction: column;
   align-items: end;
   flex: 1;
+  height: 100%;
 }
 
 .find-car-form .wrap {
-  width: 60%;
+  width: 50%;
 }
 
 .find-car-image {
   flex: 1;
   max-width: 100%;
-  height: auto;
   display: block;
+  height: 100%;
   margin: 0 auto;
 }
 
 .find-car-form h1 {
-  font-size: 50px;
+  font-size: 32px;
   line-height: 1.1;
 }
 
 .find-car-form p {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
   overflow-wrap: break-word;
   margin-top: 10px;
@@ -49,8 +51,8 @@
 
 .find-car-form .wrap .input input {
   height: 70px;
-  padding: 10px 40px;
-  font-size: 20px;
+  padding: 0 35px;
+  font-size: 18px;
   border-radius: 7px;
 
   &::placeholder {

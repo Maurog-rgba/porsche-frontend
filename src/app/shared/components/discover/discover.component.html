@@ -1,0 +1,15 @@
+<section>
+  <h1>Descubra</h1>
+  <div class="content">
+    @for (content of contents; track $index) {
+    <div class="card">
+      <img [src]="content.image" [alt]="content.text" />
+      <div class="card-content">
+        <p>{{ content.text }}</p>
+        <span class="material-symbols-outlined"> arrow_right_alt </span>
+      </div>
+      <div class="shadow"></div>
+    </div>
+    }
+  </div>
+</section>
