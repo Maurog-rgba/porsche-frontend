@@ -1,17 +1,25 @@
 .content {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  padding: 90px;
-  flex-wrap: wrap;
-  margin-bottom: 70px;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  padding: 90px 200px;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(1, auto);
+    padding: 90px 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 90px 50px;
+  }
 }
 
 .card {
   position: relative;
-  width: 350px;
-  height: 265px;
+  width: auto;
+  height: auto;
   overflow: hidden;
   cursor: pointer;
   border-radius: 20px;
@@ -44,6 +52,7 @@
   font-size: 14px;
   font-weight: 500;
   letter-spacing: .5px;
+  z-index: 2;
 }
 
 .card-content .material-symbols-outlined {
@@ -54,4 +63,15 @@
   &:hover {
     background-color: grey;
   }
+}
+
+.shadow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%);
 }

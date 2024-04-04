@@ -16,15 +16,30 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 20px;
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: repeat(1, auto);
+    padding: 0 150px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
 }
 
 .model-card {
   position: relative;
   border: 1px solid #ddd;
-  max-width: 450px;
+  width: 450px;
   height: 645px;
   border-radius: 20px;
   overflow: hidden;
+
+  @media screen and (max-width: 1000px) {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .model-card .car-name {
@@ -46,7 +61,7 @@
 }
 
 .model-card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .model-card-footer {
@@ -57,7 +72,11 @@
   width: 87%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+
+  @media screen and (max-width: 1000px) {
+    width: 90%;
+  }
 }
 
 .model-card-footer span {
@@ -72,12 +91,18 @@
   flex-direction: column;
   gap: 15px;
   width: 100%;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: row;
+    justify-content: start;
+    width: 70%;
+  }
 }
 
 .model-card-buttons button:nth-child(1),
 .model-card-buttons button:nth-child(2) {
   padding: 13px 26px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 5px;
   width: 100%;
   font-size: 16px;
@@ -85,14 +110,31 @@
   cursor: pointer;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  @media screen and (max-width: 1000px) {
+    padding: 13px 15px;
+  }
+}
+
+.model-card-buttons button:nth-child(1) {
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
   }
 }
 
 .model-card-buttons button:nth-child(2) {
   color: white;
   background-color: transparent;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
 }
 
 @media screen and (max-width: 768px) {
