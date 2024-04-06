@@ -1,8 +1,12 @@
+<app-side-menu [class.menu-visible]="menuVisible"></app-side-menu>
+@if (menuVisible) {
+<button (click)="toggleMenu()" class="close-button">X</button>
+}
 <header>
-  <div class="menu-btn">
+  <button class="menu-btn" (click)="toggleMenu()">
     <span class="material-symbols-outlined"> menu </span>
     <span class="menu-btn-text"> Menu </span>
-  </div>
+  </button>
   <div class="logo">
     @if (logo === 'desktop') {
     <img

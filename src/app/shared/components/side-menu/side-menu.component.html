@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="menu">
+    <ul>
+      <li class="menu-item" (click)="changeOption(1)">
+        <span>Modelos</span> <span>></span>
+      </li>
+      <li class="menu-item" (click)="changeOption(2)">
+        <span>Aconselhamento e compra</span> <span>></span>
+      </li>
+      <li class="menu-item" (click)="changeOption(3)">
+        <span>Serviços</span> <span>></span>
+      </li>
+      <li class="menu-item" (click)="changeOption(4)">
+        <span>Experiência</span> <span>></span>
+      </li>
+      <li class="menu-item" (click)="changeOption(5)">
+        <span>Porsche Center</span> <span>></span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="items">
+    @if (option === 1) {
+    <div class="models-menu">
+      <ul>
+        <li class="models-menu-item">718</li>
+        <li class="models-menu-item">911</li>
+        <li class="models-menu-item">Taycan</li>
+        <li class="models-menu-item">Panamera</li>
+        <li class="models-menu-item">Macan</li>
+        <li class="models-menu-item">Cayenne</li>
+      </ul>
+    </div>
+    } @else if (option === 2) {
+    <div class="counseling-menu">
+      <ul>
+        <li class="counseling-menu-item">Configurar</li>
+        <li class="counseling-menu-item">Comparar modelos</li>
+        <li class="counseling-menu-item">Veículos Seminovos</li>
+        <li class="counseling-menu-item">Financial Services</li>
+        <li class="counseling-menu-item">E-Performance</li>
+        <li class="counseling-menu-item">Tequipment - Acessórios Originais</li>
+      </ul>
+    </div>
+    } @else if (option === 3) {
+    <div class="services-menu">
+      <ul>
+        <li class="services-menu-item">Manutenção e Serviço</li>
+        <li class="services-menu-item">
+          Exclusive Manufaktur - Personalizar Veículos
+        </li>
+        <li class="services-menu-item">Classic - Manutenção e Peças</li>
+        <li class="services-menu-item">
+          Approved - Garantia & Veículos Seminovos
+        </li>
+        <li class="services-menu-item">Driver's Selection - Loja Virtual</li>
+      </ul>
+    </div>
+    } @else if (option === 4) {
+    <div class="experience-menu">
+      <ul>
+        <li class="experience-menu-item">Motorsport</li>
+        <li class="experience-menu-item">
+          Porsche Experience - Cursos e Viagens
+        </li>
+        <li class="experience-menu-item">Clubes Porsche</li>
+        <li class="experience-menu-item">Golf</li>
+        <li class="experience-menu-item">Christophorus Magazine</li>
+        <li class="experience-menu-item">Visite o Museu</li>
+      </ul>
+    </div>
+    } @else if (option === 5) {
+    <div class="center">
+      <input type="text" placeholder="Código postal ou cidade" />
+      ou
+      <button>Utilizar localização atual</button>
+    </div>
+    }
+  </div>
+</div>
