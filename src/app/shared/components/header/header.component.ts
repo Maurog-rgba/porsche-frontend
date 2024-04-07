@@ -10,7 +10,7 @@ import { SideMenuComponent } from '../side-menu/side-menu.component';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  logo: 'desktop' | 'mobile' = 'mobile';
+  logo: 'desktop' | 'mobile' = 'desktop';
   menuVisible = false;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {
@@ -29,6 +29,6 @@ export class HeaderComponent {
   }
 
   toggleMenu() {
-    this.menuVisible = !this.menuVisible; // Alterna a visibilidade do menu
+    this.menuVisible = !this.menuVisible;
   }
 }

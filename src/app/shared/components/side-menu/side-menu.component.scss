@@ -59,3 +59,38 @@
     background: rgba(0, 0, 0, 0.1);
   }
 }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.center input {
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.center span {
+  font-size: 12px;
+  font-weight: 400;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.center button {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.1);
+  }
+}

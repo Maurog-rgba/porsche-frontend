@@ -29,6 +29,7 @@ header {
   color: white;
   transition: background 0.3s;
   background: transparent;
+  border: none;
 
   &:hover {
     background: rgba(255, 255, 255, 0.1);
@@ -50,7 +51,11 @@ header {
   width: fit-content;
   padding: 10px;
   color: white;
-  margin: 0 auto;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
 }
 
 .letter-logo {
