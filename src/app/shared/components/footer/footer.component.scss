@@ -1,0 +1,94 @@
+footer {
+  padding: 50px;
+  background-color: #0e0e12;
+  color: white;
+}
+
+.country-region {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.country,
+.alter {
+  font-size: 14px;
+}
+
+.contact-info {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.contact p,
+.social-media p {
+  font-size: 14px;
+}
+
+.contact button {
+  height: 55px;
+  width: 300px;
+  padding: 13px 26px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.social-media-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+}
+
+.social-media-buttons button {
+  width: 55px;
+  height: 55px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.company {
+  margin-top: 40px;
+}
+
+.company-content {
+  display: flex;
+  gap: 20px;
+}
+
+.company-title {
+  margin-bottom: 20px;
+}
+
+.first-grid ul,
+.second-grid ul {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+hr {
+  margin: 50px 0;
+}
+
+.footer-row {
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.footer-image-logo {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.footer-image-logo img {
+  width: 200px;
+  height: 100px;
+}
