@@ -24,7 +24,7 @@ Para visualizar o projeto em sua máquina local, siga estas etapas:
 1. **Clonar o repositório:**
 
    ```
-   git clone https://github.com/seu-usuario/site-porsche-brasil.git
+   git clone https://github.com/Maurog-rgba/porsche-frontend.git
    ```
 
 2. **Instalar dependências:**
