@@ -1,27 +1,52 @@
-# PorsheFrontend
+# Projeto Home Page da Porsche Brazil em Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.0.
+## Sobre o Projeto
 
-## Development server
+Este repositório contém o desenvolvimento da home page do site da Porsche Brazil, utilizando a tecnologia Angular. O projeto ainda está em fase de desenvolvimento, com o objetivo de criar uma interface moderna e responsiva que reflita a identidade da marca. Este projeto visa recriar a página inicial do site da Porsche Brasil com as seguintes funcionalidades e tecnologias:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Angular**: Utilizado para construir uma interface de usuário dinâmica e responsiva.
+- **TypeScript**: Linguagem de programação que oferece suporte a tipagem estática opcional e compila para JavaScript.
+- **SCSS**: Utilizado para estilizar a página com características como variáveis, mixins e aninhamento.
 
-## Code scaffolding
+## Status do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Em desenvolvimento.
 
-## Build
+## Funcionalidades e Demonstração da Aplicação
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Interface responsiva adaptável a diferentes dispositivos.
+- Navegação intuitiva e fácil de usar.
 
-## Running unit tests
+## Acesso ao Projeto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Para visualizar o projeto em sua máquina local, siga estas etapas:
 
-## Running end-to-end tests
+1. **Clonar o repositório:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```
+   git clone https://github.com/seu-usuario/site-porsche-brasil.git
+   ```
 
-## Further help
+2. **Instalar dependências:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   Navegue até o diretório do projeto e execute:
+
+   ```
+   npm install
+   ```
+
+3. **Executar o servidor de desenvolvimento:**
+
+   Após a instalação das dependências, execute o seguinte comando para iniciar o servidor de desenvolvimento:
+
+   ```
+   ng serve
+   ```
+
+4. **Visualizar o projeto:**
+
+   Abra seu navegador e acesse `http://localhost:4200/` para visualizar a página inicial do site da Porsche Brasil em desenvolvimento.
+
+## **Desenvolvido por:**
+
+- [Mauro](link_para_seu_perfil)
