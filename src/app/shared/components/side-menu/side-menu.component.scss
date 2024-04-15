@@ -94,3 +94,17 @@
     border-color: rgba(0, 0, 0, 0.1);
   }
 }
+
+.models-menu-item {
+  padding: 2rem 1.5rem;
+  margin: 5px 0;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}

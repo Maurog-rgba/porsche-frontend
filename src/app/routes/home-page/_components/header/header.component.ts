@@ -1,6 +1,6 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Component, HostListener, Inject, PLATFORM_ID } from '@angular/core';
-import { SideMenuComponent } from '../side-menu/side-menu.component';
+import { SideMenuComponent } from '../../../../shared/components/side-menu/side-menu.component';
 
 @Component({
   selector: 'app-header',
